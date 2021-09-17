@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@400;500;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --dark-gray: hsl(0, 0%, 48%);
+    --spacing: 0.25rem;
+    --radius: 0.5rem;
+    --ff-primary:'commissioner',sans-serif;
+}
+body{
+    background-color:rgb(245, 241, 238);
+}
+/*header*/
+#header{
+    background: url('images/image-hero-mobile.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height:300px;
+    color: white;
+    padding: 0 20px;
+}
+#header h2{
+    padding-top:20px;
+    font-family:var(--ff-primary);
+    font-weight: 700;
+    float: left;
+    font-size: 2em;
+}
+/*links*/
+.links{
+display: none;
+}
+.links ul{
+   list-style-type: none;
+   display: flex;
+}
+.links ul li{
+    align-self: flex-end;
+    justify-content: flex-end;
+    justify-self: flex-end;
+}
+.links ul li a{
+    text-decoration: none;
+    color:white ;
+}
+.bars i{
+    float: right;
+    padding-top: 25px;
+}
+/*main content*/
+/*section a */
+.main-content{
+    border-radius: var(--radius);
+    border: 1px solid gainsboro;
+    margin:1% 10% 5% 10%;
+    padding: 30px;
+    background-color: white;
+}
+.main-text{
+    text-transform: capitalize;
+    font-family: var(--ff-primary);
+    font-weight: 700;
+    font-size: 1.7em;
+    text-align: center;
+    
+}
+.sub-text{
+    font-family: var(--ff-primary);
+    font-weight: 400;
+    text-align: center;
+   
+}
+.section-a .main-text{
+    padding-bottom: 20px;
+}
+.section-a .sub-text{
+    padding-bottom: 40px;
+}
+.btn{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+    padding:15px 25px;
+    border-radius: 25px;
+    background-color: var(--moderate-cyan);
+    cursor: pointer;
+}
+.btn-pledge{
+   background-color: black;
+   color: var(--dark-gray); 
+   font-size: 1em;
+   padding: 17px;
+   border-radius: 50%;
+   cursor: pointer;
+}
+/*section b*/
+.section-b .sub-text{
+    padding-bottom: 20px;
+}
+.section-b .main-text{
+    padding-bottom: 8px;
+    font-size: 2.2em;
+}
+.section-b hr{
+    width: 40%;
+    margin-bottom: 2%;
+    justify-self: center;
+    align-self: center;
+    margin-left: 30%;
+}
+/*progress bar*/
+.sec-progress{
+    background-color:rgb(245, 241, 238) ;
+    height: 12px;
+    width: 100%;
+    border-radius: 6px;
+}
+.progress{
+    background-color:var(--moderate-cyan);
+    height: 12px;
+    border-radius: 6px;
+    width: 70%;
+}
+/*section c*/
+.section-c .main-text
+{
+    text-align: left;
+    padding-bottom: 15px;
+}
+.section-c .sub-text{
+    text-align: left;
+    font-weight: normal;
+    word-spacing: var(--spacing);
+    padding-bottom:40px;
+}
+.sec-c-main{
+font-family: var(--ff-primary);
+font-weight: 700;
+font-size: 1.2em;
+}
+.sec-c-sub{
+    font-family: var(--ff-primary);
+    color: var(--moderate-cyan);
+    padding: 10px 0;
+    font-weight: 500;
+
+}
+.sec-c-text{
+    font-family: var(--ff-primary);
+}
+span{
+    padding-left: 5px;
+}
+.section-c .btn:hover{
+    background-color: var(--dark-gray);
+    color: white;
+}
+/*modal*/
+.input{
+    display: flex;
+}
+label{
+    padding:0 30px;
+}
+input{
+padding-top: 15px;
+}
+.modal hr{
+    margin-top: 10px;
+    width: 100%;
+}
+.modal .btn{
+    padding-top: 10px;
+}
+.pledges{
+    text-align: center;
+    padding-top: 15px;
+}
+.pledges p{
+    text-align: center;
+    padding:10px 0;
+}
+.pledges input{
+    border-radius: 25px;
+    border: 1px solid gainsboro;
+    width: 25%;
+    background: white;
+    color: black;
+}
+input::placeholder{
+color: black;
+}
+.modals i{
+    float: right;
+    cursor: pointer;
+}
+.modals h3{
+    float: left;
+}
+.para{
+    padding-top: 50px;
+}
+.top{
+    padding: 0 30px;
+}
+.style{
+    position: absolute;
+    top: 25%;
+}
+.style-select{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.opacity{
+    opacity: 0.2;
+    z-index: -1;
+}
+.select{
+    border: 2px solid var(--moderate-cyan);
+}
+.hides{
+    display: none;
+}
+.pledges{
+    display: none;
+}
+.show-text .pledges{
+    display: block;
+}
+/*modal complete*/
+.icon{
+    text-align: center;
+}
+#tick{
+    border-radius: 45%;
+    color: var(--moderate-cyan);
+}
+.icon .sec-c-text{
+    padding: 30px 0;
+}
+/*media query*/
+@media screen and (min-width:700px){
+    #header{
+        background: url('images/image-hero-desktop.jpg');
+        height: 400px;
+    }
+    #header h2{
+        font-size: 2.5em;
+    }
+    #bar{
+        display: none;
+    }
+    .links{
+        display: flex;
+        float: right;
+        padding-top: 20px;
+        padding-right: 60px;
+    }
+    .links li{
+        padding: 0 15px;
+    }
+    .main-content{
+        margin:2% 20% 2% 20%;
+    }
+    .btn-pledge{
+        float: right;
+        padding: 15px;
+        margin-top: -12px;
+    }
+    .grid{
+        columns:3;
+        padding-bottom: 50px;
+    }
+    .sec-b hr{
+        transform: rotate(90deg);
+        width: 150px;
+        margin-top:-10%;
+        margin-left: 60%;
+    }
+}
