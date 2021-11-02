@@ -34,7 +34,7 @@ cancel.addEventListener('click',function(){
 radios.forEach(check => {
     check.addEventListener('click',function(e){
         const pledgeContainer=e.currentTarget.parentElement.parentElement;
-        pledgeContainer.classList.add('show-text')
+        pledgeContainer.classList.toggle('show-text')
         console.log(pledgeContainer)
         //continue button
         continues.forEach(continueBtn => {
